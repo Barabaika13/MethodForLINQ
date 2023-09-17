@@ -7,7 +7,7 @@
             var list = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
             try
             {
-                var result1 = list.Top(60);
+                var result1 = list.Top(50);
                 foreach (var item in result1)
                 {
                     Console.WriteLine(item);
@@ -32,7 +32,7 @@
             };
             try
             {
-                var result2 = persons.Top(60, person => person.Age);
+                var result2 = persons.Top(50, person => person.Age);
                 foreach (var person in result2)
                 {
                     Console.WriteLine($"{person.Name}, Age: {person.Age}");
